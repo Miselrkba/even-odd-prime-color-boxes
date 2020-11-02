@@ -1,38 +1,26 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
 
-const countries = [
-    { name: 'Finland', city: 'Helsinki' },
-    { name: 'Sweden', city: 'Stockholm' },
-    { name: 'Denmark', city: 'Copenhagen' },
-    { name: 'Norway', city: 'Oslo' },
-    { name: 'Iceland', city: 'Reykjavík' },
-  ]
-  
-  // Country component
-  const Country = ({ country: { name, city } }) => {
-    return (
-      <div>
-        <h1>{name}</h1>
-        <small>{city}</small>
-      </div>
-    )
+export default function Testing1() {
+  const numbers = [...Array(32).keys()];
+
+  const evenNumbers = numbers.map((item) => item % 2 === 0);
+  const oddNumbers = numbers.map((item) => item % 2 !== 0);
+  const primeNumbers = numbers.filter(isPrime);
+
+  function isPrime(num) {
+    for (let start = 2; num > start; start++) {
+      if (num % start == 0) {
+        return false;
+      }
+    }
+    return num > 1;
   }
-  
-  // countries component
-  const Countries = ({ countries }) => {
-    const countryList = countries.map((country) => <Country country={country} />)
-    return <div>{countryList}</div>
-  }
-  // App component
-  const Testing1 = () => (
-    <div className='container'>
-      <div>
-        <h1>Countries List</h1>
-        <Countries countries={countries} />
-      </div>
+
+  return (
+    <div className="grid">
+      <div>{evenNumbers}</div>
+      <div>{oddNumbers}</div>
+      <div>{primeNumbers}</div>
     </div>
-  )
-
-
-export default Testing1
+  );
+}
