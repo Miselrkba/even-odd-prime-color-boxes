@@ -1,49 +1,38 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import Tesing from './Tesing'
 
-// Function to display time in Mon date, year format eg Oct 4, 2020
-const showDate = (time) => {
-  const months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December',
+const countries = [
+    { name: 'Finland', city: 'Helsinki' },
+    { name: 'Sweden', city: 'Stockholm' },
+    { name: 'Denmark', city: 'Copenhagen' },
+    { name: 'Norway', city: 'Oslo' },
+    { name: 'Iceland', city: 'Reykjavík' },
   ]
-
-  const month = months[time.getMonth()].slice(0, 3)
-  const year = time.getFullYear()
-  const date = time.getDate()
-  return ` ${month} ${date}, ${year}`
-}
-
-// A button component
-
-const Button = (props) => <button onClick={props.onClick}>{props.text}</button>
-
-// The App, or the parent or the container component
-// Functional Component
-const Testing = () => {
-  const handleTime = () => {
-    alert(showDate(new Date()))
+  
+  // Country component
+  const Country = ({ country: { name, city } }) => {
+    return (
+      <div>
+        <h1>{name}</h1>
+        <small>{city}</small>
+      </div>
+    )
   }
-  const greetPeople = () => {
-    alert('Welcome to 30 Days Of React Challenge, 2020')
+  
+  // countries component
+  const Countries = ({ countries }) => {
+    const countryList = countries.map((country) => <Country country={country} />)
+    return <div>{countryList}</div>
   }
-  return (
-    <div className='app'>
-      <Button text='show time' onClick={handleTime} />
-      <Button text='Greet People' onClick={greetPeople} />
+  // App component
+  const Testing1 = () => (
+    <div className='container'>
+      <div>
+        <h1>Countries List</h1>
+        <Countries countries={countries} />
+      </div>
     </div>
   )
-}
 
-export default Tesing
+
+export default Testing1
