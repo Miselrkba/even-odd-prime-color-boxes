@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  background: aliceblue;
+  border-radius: 3em;
+  margin: 2em 2em;
+  height: 90vh;
+}
+
+.heading{
+  margin-top: 2em
+}
+
+.header{
+  padding-top: 1em;
+}
+.subheading{
+  margin-top: 5em;
+}
+
+.input {
+  border-radius: 1em;
+  border: none;
+  padding: 1em;
+  margin: 8em 1em;
+  margin-bottom: 2em;
+}
+
+.button {
+  background: red;
+  border-radius: 1em;
+  padding: 1em;
+  border: none;
+  color: seashell;
+  width: 18em;
+}
