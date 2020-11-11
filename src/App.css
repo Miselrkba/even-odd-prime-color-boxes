@@ -71,3 +71,32 @@
   color: seashell;
   width: 18em;
 }
+
+/* ******Color boxes */
+
+.grid{
+  margin: 2em;
+  display: grid;
+  grid-template-columns: repeat(8,1fr);
+  gap: 1px
+}
+
+.grid-box{
+  height: 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white
+}
+
+.even{
+  background: green;
+}
+
+.odd{
+  background: orange;
+}
+.prime{
+  background: red;
+}
+

@@ -1,15 +1,13 @@
 import React from "react";
 import "./App.css";
+import ColorBoxes from "./ColorBoxes";
 import Testing1 from "./Testing1";
 
 
 function App() {
   return (
     <div className="App">
-      {/* <Table /> */}
-      {/* <Table1 /> */}
-      {/* <CheckboxContainer /> */}
-      <Testing1 />
+      <ColorBoxes />
     </div>
   );
 }
