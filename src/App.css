@@ -44,8 +44,10 @@
 
 .box{
   background: aqua;
-  width: 20em;
+  width: 18em;
   height: auto;
+  padding: 0.5em;
   font-size: 2em;
+
 }
 
