@@ -42,13 +42,10 @@
   }
 }
 
-.table{
-  text-transform: uppercase;
-  font-weight: bolder;
+.box{
+  background: aqua;
+  width: 20em;
+  height: auto;
+  font-size: 2em;
 }
 
-.bar{
-  background: orange;
-  padding: 1em;
-  width: 60em;
-}
