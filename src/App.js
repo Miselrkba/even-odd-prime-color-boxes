@@ -1,13 +1,12 @@
 import React from "react";
 import "./App.css";
-import ColorBoxes from "./ColorBoxes";
-import Testing1 from "./Testing1";
+import PopulationGraph from "./PopulationGraph";
 
 
 function App() {
   return (
     <div className="App">
-      <ColorBoxes />
+      <PopulationGraph />
     </div>
   );
 }

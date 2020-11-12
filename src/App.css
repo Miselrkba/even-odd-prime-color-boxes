@@ -1,5 +1,10 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
   text-align: center;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -37,66 +42,13 @@
   }
 }
 
-.container {
-  background: aliceblue;
-  border-radius: 3em;
-  margin: 2em 2em;
-  height: 90vh;
+.table{
+  text-transform: uppercase;
+  font-weight: bolder;
 }
 
-.heading{
-  margin-top: 2em
-}
-
-.header{
-  padding-top: 1em;
-}
-.subheading{
-  margin-top: 5em;
-}
-
-.input {
-  border-radius: 1em;
-  border: none;
-  padding: 1em;
-  margin: 8em 1em;
-  margin-bottom: 2em;
-}
-
-.button {
-  background: red;
-  border-radius: 1em;
-  padding: 1em;
-  border: none;
-  color: seashell;
-  width: 18em;
-}
-
-/* ******Color boxes */
-
-.grid{
-  margin: 2em;
-  display: grid;
-  grid-template-columns: repeat(8,1fr);
-  gap: 1px
-}
-
-.grid-box{
-  height: 5em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white
-}
-
-.even{
-  background: green;
-}
-
-.odd{
+.bar{
   background: orange;
+  padding: 1em;
+  width: 60em;
 }
-.prime{
-  background: red;
-}
-

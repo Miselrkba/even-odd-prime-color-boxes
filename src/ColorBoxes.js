@@ -1,5 +1,5 @@
 import React from "react";
-import { colorArray } from "./colorArray";
+import { tenHighestPopulation } from "./population";
 
 function ColorBoxes() {
   return (
