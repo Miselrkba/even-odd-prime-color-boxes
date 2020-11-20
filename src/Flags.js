@@ -38,25 +38,25 @@ function Flags() {
             <p>
               <b>Capital: </b>
             </p>
-            <span> {random.capital}</span>
+            <span className="text"> {random.capital}</span>
           </div>
           <div className="heading-container">
             <p>
               <b>Language: </b>
             </p>
-            <span> {random.languages}</span>{" "}
+            <span className="text"> {random.languages}</span>{" "}
           </div>
           <div className="heading-container">
             <p>
               <b>Population: </b>
             </p>
-            <span>{random.population}</span>
+            <span className="text">{random.population}</span>
           </div>
           <div className="heading-container">
             <p>
               <b>Currency: </b>
             </p>
-            <span>{random.currency}</span>
+            <span className="text">{random.currency}</span>
           </div>
         </div>
       </div>
